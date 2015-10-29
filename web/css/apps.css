@@ -1,3 +1,6 @@
+* {
+	font-size: 1em;
+}
 body{
 	/*background-image: url("../img/projBackGround2.jpg");*/
 	background-color: #9692FF;
@@ -16,7 +19,7 @@ body{
 	background-color: #3A6BB2;
 }
 .entete{
-	height: 60px;
+	height: auto;
 	margin: auto;
 	max-width: 375px;
 	padding: 5px;
@@ -25,6 +28,10 @@ body{
 	font-family: cursive;
 	background-color: #9FB25D;
 	box-sizing: border-box;
+}
+h1 {
+	font-size: 2em;
+	color:	#acfe5e;
 }
 p{
 
