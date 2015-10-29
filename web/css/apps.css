@@ -1,0 +1,31 @@
+body{
+	/*background-image: url("../img/projBackGround2.jpg");*/
+	background-color: #9692FF;
+	text-align: center;
+
+}
+#header{
+	height: 60px;
+	width: 75%;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	margin: auto;
+	border: 1px red solid;
+	border-radius: 10px;
+	box-shadow: 6px 8px 5px #090582;
+	background-color: #3A6BB2;
+}
+.entete{
+	height: 60px;
+	margin: auto;
+	max-width: 375px;
+	padding: 5px;
+	width: 50%;
+	border-radius: 10px;
+	font-family: cursive;
+	background-color: #9FB25D;
+	box-sizing: border-box;
+}
+p{
+
+}
