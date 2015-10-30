@@ -12,27 +12,33 @@
     		  Cheat sheet GIT / GITHUB
       </h1>
 
-      <div>
-      		<p class="entete">
-      	       ===========================<br/>
-                          configurer  GIT <br/>
-      		    ===========================<br/><br/>
-          </p>
-          <p>
-          		git config  --global user.name "nom"<br/>
-          		git config --global user.email "adresse@email"<br/>
-          		git config --global color.ui auto<br/><br/>
 
-          		git config --list<br/>
-          </p>
-    	</div>
-  <div>
-		<p class="entete">
-		===========================<br/>
+		<p class="enteteG">
+                    configurer  GIT <br/>
+    </p>
+
+    <p >
+      <dl class="droit">
+        <dt>git config --global user.name "nom"</dt>
+        <dd>- définir le nom de l'utilisateur git,</dd>
+        <dt>git config --global user.email "adresse@email"</dt>
+        <dd>- définir adresse mail de l'utilisateur,</dd>
+        <dt>git config --global color.ui auto</dt>
+        <dd>- paramétrage syntaxique en couleur</dd>
+        <dt>""</dt>
+        <dt>git config --list</dt>
+        <dd>- liste les options</dd>
+      </dl>
+    </p>
+    <a href="#header">TOP</a>
+		<hr>
+    <p class="enteteD">
+
                     Utiliser GIT en local<br/>
-		===========================<br/>
+
   </p>
-  <p>
+
+  <p class="gauche">
     mkdir cheatsheet_git; cd cheatsheet_git<br/>
 		git init pour initialiser un projet,<br/>
 		git status donne l'état actuel,<br/>
@@ -47,14 +53,13 @@
 
 		git diff  liste les différences entre les versions des fichiers du projet<br/>
   </p>
-	</div>
-  <div>
-		<p class="entete">
-===========================<br/>
+<a href="#header">TOP</a>
+		<p class="enteteG">
+
                     Naviguer dans GIT<br/>
-===========================<br/>
+
 </p>
-<p>
+<p  class="droit">
 		    git log [ --online ]  chercher le commit number<br/>
 		    git checkout numlogARestaurer  permet de retrouver le code à un moment donné<br/>
         Seuleument en consultation - pas de commit possible sur un projet<br/>
@@ -64,15 +69,12 @@
       git revert<br/>
       git reset<br/>
 	</p>
-  </div>
-	<div>
-		<p class="entete">
+<a href="#header">TOP</a>
+		<p class="enteteD">
 
-===========================<br/>
              git en mode remote<br/>
-=========================== <br/>
 		</p>
-    		<p>
+    		<p class="gauche">
       		sur gitHub on crée un repository cheatsheet_git<br/>
       		synchroniser le repertoire git local avec le repository gitHub:<br/>
       		git remote add origin git@github.com:didierClin/cheatSheet_git.git<br/>
@@ -83,15 +85,13 @@
 
       		git remote -v    verifie que le repository existe sur github<br/>
     		</p>
-  	</div>
-    <div>
-  		<p class="entete">
-===========================<br/>
-             git : branches<br/>
-=========================== <br/>
-	</div>
-	<p>
-		<h3>une branche = une fonctionnalité</h3>
+        <a href="#header">TOP</a>
+  		<p class="enteteG">
+             Les branches<br/>
+
+	</p>
+	<p  class="droit">
+		une branche = une fonctionnalité</h3>
 		git branch new_feature<br/>
 
 		git branch liste les différentes branches existantes<br/><br/>
@@ -104,32 +104,25 @@
                                     on doit etre dans la branche receptrice du merge<br/>
 		git branch -d new_feature   delete la branche new_feature (clean-up)<br/>
 		git branch -D new_feature   force le delete lorsque la branche n'est pas commitée avant le delete (pending change)<br/>
-	</p>
-	</div>
-	<div>
-	       <p	class="entete">
+  	</p>
+    <p	class="enteteD">
 
-		===========================<br/>
             		 git : Partager<br/>
-		===========================<br/>
 		</p>
-		<p>
+		<p class="gauche">
 		git fetch<br/>
 
 		git clone<br/>
-  </div>
-	<div>
-	       <p	class="entete">
-
-		===========================<br/>
+    </p>
+    <p	class="enteteG">
             		 git : Héberger<br/>
-		===========================<br/>
+
 		</p>
-		<p>
+		<p  class="droit">
 		git branch gh-pages      crée une branche (gh-pages : gitHub pages)<br/>
 		git checkout gh-pages<br/>
 		git push origin gh-pages  dans settings on obtient une url externe  (voir jekill)<br/>
 
-	</div>
+	</p>
   </body>
 </html>

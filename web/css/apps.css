@@ -11,28 +11,84 @@ body{
 	height: 60px;
 	width: 75%;
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	margin: auto;
 	border: 1px red solid;
 	border-radius: 10px;
 	box-shadow: 6px 8px 5px #090582;
-	background-color: #3A6BB2;
+	/*background-color: #3A6BB2;*/
 }
-.entete{
-	height: auto;
-	margin: auto;
-	max-width: 375px;
+.enteteG{
+	float: left;
+	font-size: 2em;
+	text-align: center;
+	height: 530px;
+	margin-left: 10px;
+	margin-right: auto;
+	max-width: 345px;
 	padding: 5px;
 	width: 50%;
-	border-radius: 10px;
+	border-radius: 15px 0 0 15px;
 	font-family: cursive;
-	background-color: #9FB25D;
+	background-color: #FF640D;
 	box-sizing: border-box;
 }
-h1 {
+.droit{
 	font-size: 2em;
+	margin-left: 50px;
+	padding-left: 50px;
+	border-radius: 0  15px 15px 0;
+	height: 530px;
+	background-color: #251fcc;
+}
+dt{
+	text-align: left;
+	color: gray;
+
+	padding-left: 10px;
+	font-style: italic;
+}
+dd{
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+}
+.enteteD{
+	float: right;
+	font-size: 1.5em;
+	text-align: center;
+	height: 530px;
+	margin-left: auto;
+	margin-right: 10px;
+	max-width: 345px;
+	padding: 5px;
+	width: 50%;
+	border-radius: 0  15px 15px 0;
+	font-family: cursive;
+	background-color: #5800B2;
+	box-sizing: border-box;
+}
+.gauche{
+	font-size: 1.5em;
+	text-align: right;
+	margin-right: 50px;
+	padding-right: 50px;
+	border-radius: 15px 0 0 15px;
+	height: 530px;
+	background-color: #251fcc;
+}
+.cde{
+	font-style: oblique;
+}
+.descrip{
+	text-align: right;
+	margin-right: 10px;
+}
+h1 {
+	font-size: 2.5em;
 	color:	#acfe5e;
 }
-p{
-
+a{
+	margin-right: 10px;
+clear: both;
 }
