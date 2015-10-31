@@ -32,7 +32,7 @@ body{
 }
 dt{
 	text-align: left;
-    margin-left: 20px;
+    margin-left: 15%;
 	color: white;
 
 	padding-left: 10px;
@@ -41,7 +41,7 @@ dt{
 dd{
 	color: #60686f;
 	text-align: right;
-    margin-right: 20px;
+    margin-right: 10%;
 	padding-right: 10px;
 }
 h1 {

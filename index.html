@@ -19,7 +19,7 @@
       		    ===========================<br/>
           </p>
           <p>
-              <dl class="detail">
+              <dl >
                 <dt>git config --global user.name "nom"</dt>
                 <dd>- définir le nom de l'utilisateur git,</dd>
                 <dt>git config --global user.email "adresse@email"</dt>
@@ -40,19 +40,27 @@
 		===========================<br/>
   </p>
   <p>
-    mkdir cheatsheet_git; cd cheatsheet_git<br/>
-		git init pour initialiser un projet,<br/>
-		git status donne l'état actuel,<br/>
-		git add mon_site.html   ajoute le fichier mon_site.html<br/>
-		git commit -m "commentaire sur l'objet du commit"<br/><br/>
+        <dt>mkdir cheatsheet_git; cd cheatsheet_git</dt>
+        <dd>-création rep projet</dd>
+		<dt>git init</dt> 
+		<dd>-pour initialiser un projet,</dd>
+		<dt>git status</dt>
+		<dd>donne l'état actuel,</dd>
+		<dt>git add mon_site.html </dt> 
+		<dd> ajoute le fichier mon_site.html</dd>
+		<dt>git commit -m "commentaire sur l'objet du commit"</dt>
 
-		git commit -a -m "comm"     add et commit<br/><br/>
+		<dt>git commit -a -m "comm" </dt> 
+		<dd>  add et commit</dd>
 
-		git log  donne les détails des différents points de commit<br/>
-		git log -n 2<br/>
-		git log --oneline<br/><br/>
+		<dt>git log </dt>
+		<dd>donne les détails des différents points de commit</dd>
+		<dt>git log -n 2</dt><dd>affiche les 2 derniers logs</dd>
+		<dt>git log --oneline<</dt>
+		<dd>affiche le log en condensé,</dd>
 
-		git diff  liste les différences entre les versions des fichiers du projet<br/>
+		<dt>git diff </dt>
+		<dd> liste les différences entre les versions des fichiers du projet</dd>
   </p>
 	</div>
   <div>
@@ -62,11 +70,17 @@
 ===========================<br/>
 </p>
 <p>
-		    git log [ --online ]  chercher le commit number<br/>
-		    git checkout numlogARestaurer  permet de retrouver le code à un moment donné<br/>
-        Seuleument en consultation - pas de commit possible sur un projet<br/>
-        git checkout numlogARest index.html   restaure le fichier index.html à l'instant du commit<br/>
-        possible de commiter le fichier<br/>
+        <dt>git log [ --online ]</dt>
+        <dd>chercher le commit number</dd>
+        <dt>git checkout numlogARestaurer</dt>
+        <dd>permet de recuperer le code à un moment donné</dd>
+        <dd>consultation seule- pas de commit possible sur un projet</dd>
+        <dt>git checkout numlogARest index.html </dt>
+        <dd>restaure le fichier index.html à l'instant du commit</dd>
+        <dd>possible de commiter le fichier</dd>
+        <dd></dd>
+
+
 
       git revert<br/>
       git reset<br/>
