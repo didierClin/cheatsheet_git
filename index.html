@@ -12,11 +12,10 @@
     		  Cheat sheet GIT / GITHUB
       </h1>
         <p></p>
-      <div>
       		<p class="entete">
-      	       ===========================<br/>
-                          configurer  GIT <br/>
-      		    ===========================<br/>
+      	       ==================<br/>
+               configurer  GIT <br/>
+      		     ==================<br/>
           </p>
           <p>
               <dl >
@@ -32,44 +31,44 @@
                 <dd>- liste les options</dd>
               </dl>
           </p>
-    	</div>
-  <div>
 		<p class="entete">
-		===========================<br/>
-                    Utiliser GIT en local<br/>
-		===========================<br/>
-  </p>
-  <p>
-        <dt>mkdir cheatsheet_git; cd cheatsheet_git</dt>
-        <dd>-création rep projet</dd>
-		<dt>git init</dt> 
-		<dd>-pour initialiser un projet,</dd>
-		<dt>git status</dt>
-		<dd>donne l'état actuel,</dd>
-		<dt>git add mon_site.html </dt> 
-		<dd> ajoute le fichier mon_site.html</dd>
-		<dt>git commit -m "commentaire sur l'objet du commit"</dt>
+		          ==================<br/>
+              Utiliser GIT en local<br/>
+		          ==================<br/>
+   </p>
+   <p>
+	    <dl>
+          <dt>mkdir cheatsheet_git; cd cheatsheet_git</dt>
+          <dd>-création rep projet</dd>
+      		<dt>git init</dt>
+      		<dd>-pour initialiser un projet,</dd>
+      		<dt>git status</dt>
+      		<dd>donne l'état actuel,</dd>
+      		<dt>git add mon_site.html </dt>
+      		<dd> ajoute le fichier mon_site.html</dd>
+      		<dt>git commit -m "commentaire sur l'objet du commit"</dt>
 
-		<dt>git commit -a -m "comm" </dt> 
-		<dd>  add et commit</dd>
+      		<dt>git commit -a -m "comm" </dt>
+      		<dd>  add et commit</dd>
 
-		<dt>git log </dt>
-		<dd>donne les détails des différents points de commit</dd>
-		<dt>git log -n 2</dt><dd>affiche les 2 derniers logs</dd>
-		<dt>git log --oneline<</dt>
-		<dd>affiche le log en condensé,</dd>
+      		<dt>git log </dt>
+      		<dd>donne les détails des différents points de commit</dd>
+      		<dt>git log -n 2</dt><dd>affiche les 2 derniers logs</dd>
+      		<dt>git log --oneline</dt>
+      		<dd>affiche le log en condensé,</dd>
 
-		<dt>git diff </dt>
-		<dd> liste les différences entre les versions des fichiers du projet</dd>
-  </p>
-	</div>
-  <div>
+      		<dt>git diff </dt>
+      		<dd> liste les différences entre les versions des fichiers du projet</dd>
+	    </dl>
+   </p>
+
 		<p class="entete">
-===========================<br/>
+                    ==================<br/>
                     Naviguer dans GIT<br/>
-===========================<br/>
-</p>
-<p>
+                    ==================<br/>
+    </p>
+    <p>
+      <dl>
         <dt>git log [ --online ]</dt>
         <dd>chercher le commit number</dd>
         <dt>git checkout numlogARestaurer</dt>
@@ -78,79 +77,80 @@
         <dt>git checkout numlogARest index.html </dt>
         <dd>restaure le fichier index.html à l'instant du commit</dd>
         <dd>possible de commiter le fichier</dd>
-        <dd></dd>
 
-
-
-      git revert<br/>
-      git reset<br/>
-	</p>
-  </div>
-	<div>
+        <dt>git revert</dt>
+        <dt>git reset</dt>
+      </dl>
+  	</p>
 		<p class="entete">
 
-===========================<br/>
+             ==================<br/>
              git en mode remote<br/>
-=========================== <br/>
+             ================== <br/>
 		</p>
-    		<p>
-      		sur gitHub on crée un repository cheatsheet_git<br/>
-      		synchroniser le repertoire git local avec le repository gitHub:<br/>
-      		git remote add origin git@github.com:didierClin/cheatSheet_git.git<br/>
-      		pousser les fichiers locaux vers le serveur:<br/>
-      		git push -u origin master<br/>
+    <p>
+       <dl>
+      		<dd>sur gitHub on crée un repository ex: cheatsheet_git</dd>
+      		<dt>git remote add origin git@github.com:didierClin/cheatSheet_git.git</dt>
+            <dd>synchroniser le repertoire git local avec le repository gitHub:</dd>
 
-      		git pull origin master   recuperer un projet ou une branche git<br/><br/>
+      		<dt>git push -u origin master</dt>
+            <dd>pousser les fichiers locaux vers le serveur:</dd>
+      		<dt>git pull origin master </dt>
+      		<dd>  recuperer un projet ou une branche git</dd>
 
-      		git remote -v    verifie que le repository existe sur github<br/>
-    		</p>
-  	</div>
-    <div>
-  		<p class="entete">
-===========================<br/>
+      		<dt>git remote -v</dt>
+      		<dd>verifie que le repository existe sur github</dd>
+
+        </dl>
+    </p>
+  	<p class="entete">
+             ==================<br/>
              git : branches<br/>
-=========================== <br/>
-	</div>
-	<p>
-		<h3>une branche = une fonctionnalité</h3>
-		git branch new_feature<br/>
+             ================== <br/>
+	  </p>
+  	<p>
+      <dl>
+      		<h3>une branche = une fonctionnalité</h3>
+      		<dt>git branch new_feature</dt>
+      		<dd>Crée une nouvelle branche</dd>
 
-		git branch liste les différentes branches existantes<br/><br/>
+      		<dt>git branch</dt> <dd>liste les différentes branches existantes</dd>
 
-		git checkout new_feature  : positionne l'environnement git sur la branche 'new_feature'<br/>
+      		<dt>git checkout new_feature</dt>  <dd>positionne l'environnement git sur la branche 'new_feature'</dd>
 
-		git diff master..new_feature liste les différences entre les deux branches<br/>
+      		<dt>git diff master..new_feature</dt> <dd>liste les différences entre les deux branches</dd>
 
-		git merge new_feature  merge les changements entre les deux branches et réalise le commit<br/>
-                                    on doit etre dans la branche receptrice du merge<br/>
-		git branch -d new_feature   delete la branche new_feature (clean-up)<br/>
-		git branch -D new_feature   force le delete lorsque la branche n'est pas commitée avant le delete (pending change)<br/>
-	</p>
-	</div>
-	<div>
-	       <p	class="entete">
+      		<dt>git merge new_feature</dt>
+      	  <dd>merge les changements entre les deux branches et réalise le commit</dd>
+          <dd> on doit etre positionné dans la branche receptrice du merge</dd>
+      		<dt>git branch -d new_feature</dt>   <dd>delete la branche new_feature (clean-up)</dd>
+      		<dt>git branch -D new_feature</dt>   <dd>force le delete lorsque la branche n'est pas</dd><dd> commitée avant le delete (pending change)</dd>
 
-		===========================<br/>
-            		 git : Partager<br/>
-		===========================<br/>
+      </dl>
+  	</p>
+	  <p	class="entete">
+		      ==================<br/>
+          git : Partager<br/>
+		      ==================<br/>
 		</p>
 		<p>
-		git fetch<br/>
-
-		git clone<br/>
-  </div>
-	<div>
-	       <p	class="entete">
-
-		===========================<br/>
-            		 git : Héberger<br/>
-		===========================<br/>
+        <dl>
+            <dt>git fetch</dt>
+            <dt>git clone</dt>
+        </dl>
+    </p>
+    <p	class="entete">
+		      ==================<br/>
+          git : Héberger<br/>
+		      ==================<br/>
 		</p>
 		<p>
-		git branch gh-pages      crée une branche (gh-pages : gitHub pages)<br/>
-		git checkout gh-pages<br/>
-		git push origin gh-pages  dans settings on obtient une url externe  (voir jekill)<br/>
-
-	</div>
+      <dl>
+      		<dt>git branch gh-pages </dt>     <dd>crée une branche (gh-pages : gitHub pages)</dd>
+      		<dt>git checkout gh-pages</dt>
+      		<dt>git push origin gh-pages</dt> <dd>dans settings on obtient une url externe  (voir jekill)</dd>
+      </dl>
+ 	  </p>
   </body>
 </html>
