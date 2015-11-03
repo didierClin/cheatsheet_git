@@ -2,7 +2,6 @@
 	font-size: 1.1em;
 }
 body{
-	/*background-image: url("../img/projBackGround2.jpg");*/
 	background-color: #9692FF;
 	text-align: center;
 }
@@ -17,6 +16,13 @@ body{
 	box-shadow: 6px 8px 5px #090582;
 	background-color: #3A6BB2;
 }
+h1 {
+	font-size: 2em;
+	color:	#acfe5e;
+}
+hr{
+	width: 50%;
+}
 .entete{
 	height: auto;
 	margin: auto;
@@ -29,29 +35,12 @@ body{
 	background-color: #9FB25D;
 	box-sizing: border-box;
 }
-@media screen and (max-width: 900px)
-{
-  dt{
-		text-align: left;
-		margin-left: 25%;
-		margin-right: 30%;
-		color: blue;  /* detect media width change*/
-		padding-left: 10px;
-		font-style: italic;
-	}
-	dd{
-		color: #60686f;
-		text-align: right;
-		margin-right: 22%;
-		margin-left: 35%;
-		padding-right: 10px;
-	}
-}
+
 dt{
 	text-align: left;
   margin-left: 15%;
+	margin-right: 30%;
 	color: white;
-
 	padding-left: 10px;
 	font-style: italic;
 }
@@ -59,9 +48,46 @@ dd{
 	color: #60686f;
 	text-align: right;
   margin-right: 10%;
+	margin-left: 35%;
 	padding-right: 10px;
 }
-h1 {
-	font-size: 2em;
-	color:	#acfe5e;
+/* Responsive adapt Medium Size*/
+@media screen and (min-width: 500px) and (max-width: 800px){
+	#header {
+		background-color: gray;
+	}
+	h1{
+			font-size: 1.4em;
+	}
+  dt{
+		margin-left: 5%;
+		margin-right: 20%;
+		color: blue;  /* detect media width change*/
+		padding-left: 10px;
+	}
+	dd{
+		color: #60686f;
+		margin-right: 5%;
+		margin-left: 20%;
+	}
+}
+/* Responsive adapt Small Size*/
+@media screen and (max-width: 499px) {
+    #header {
+        background-color: red;
+    }
+		h1{
+			font-size: 1.2em;
+		}
+		dt{
+			margin-left: 5%;
+			margin-right: 20%;
+			color: blue;  /* detect media width change*/
+			padding-left: 10px;
+		}
+		dd{
+			color: #60686f;
+			margin-right: 5%;
+			margin-left: 20%;
+		}
 }
