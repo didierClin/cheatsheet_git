@@ -6,7 +6,7 @@ body{
 	text-align: center;
 }
 #header{
-	height: 60px;
+	height: auto;
 	width: 75%;
 	padding-top: 20px;
 	padding-bottom: 40px;
@@ -22,13 +22,13 @@ h1 {
 }
 hr{
 	width: 50%;
+	height: 3px;
 }
 .entete{
 	height: auto;
 	margin: auto;
 	max-width: 375px;
 	padding: 5px;
-
 	width: 50%;
 	border-radius: 15px;
 	font-family: cursive;
@@ -82,7 +82,7 @@ dd{
 		dt{
 			margin-left: 5%;
 			margin-right: 20%;
-			color: blue;  /* detect media width change*/
+			color: yellow;  /* detect media width change*/
 			padding-left: 10px;
 		}
 		dd{
