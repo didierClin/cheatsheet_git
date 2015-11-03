@@ -5,7 +5,6 @@ body{
 	/*background-image: url("../img/projBackGround2.jpg");*/
 	background-color: #9692FF;
 	text-align: center;
-
 }
 #header{
 	height: 60px;
@@ -30,9 +29,27 @@ body{
 	background-color: #9FB25D;
 	box-sizing: border-box;
 }
+@media screen and (max-width: 900px)
+{
+  dt{
+		text-align: left;
+		margin-left: 25%;
+		margin-right: 30%;
+		color: blue;  /* detect media width change*/
+		padding-left: 10px;
+		font-style: italic;
+	}
+	dd{
+		color: #60686f;
+		text-align: right;
+		margin-right: 22%;
+		margin-left: 35%;
+		padding-right: 10px;
+	}
+}
 dt{
 	text-align: left;
-    margin-left: 15%;
+  margin-left: 15%;
 	color: white;
 
 	padding-left: 10px;
@@ -41,7 +58,7 @@ dt{
 dd{
 	color: #60686f;
 	text-align: right;
-    margin-right: 10%;
+  margin-right: 10%;
 	padding-right: 10px;
 }
 h1 {
