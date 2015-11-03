@@ -21,7 +21,7 @@ h1 {
 	color:	#acfe5e;
 }
 hr{
-	width: 50%;
+	width: 40%;
 	height: 3px;
 }
 .entete{
@@ -73,7 +73,10 @@ dd{
 }
 /* Responsive adapt Small Size*/
 @media screen and (max-width: 499px) {
-    #header {
+    *{
+			font-size: .97em;
+			}
+			#header {
         background-color: red;
     }
 		h1{
