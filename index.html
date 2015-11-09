@@ -1,154 +1,159 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Cheat sheet GIT / GITHUB</title>
-    <script type="text/javascript" src="js/app.js"></script>
-    <link href="web/css/apps.css" rel="stylesheet" type="text/css"  />
-  </head>
 
-  <body>
-    	<h1 id="header">
-    		  Cheat sheet GIT / GITHUB
-      </h1>
+<head>
+  <meta charset="utf-8">
+  <title>Cheat sheet GIT / GITHUB</title>
+  <script type="text/javascript" src="js/app.js"></script>
+  <link href="web/css/apps.css" rel="stylesheet" type="text/css" />
+</head>
 
-        <hr/>
-      		<p class="entete">
-               configurer  GIT <br/>
-          </p>
-        <hr/>
-          <p>
-              <dl >
-                <dt>git config --global user.name "nom"</dt>
-                <dd>- définir le nom de l'utilisateur git,</dd>
-                <dt>git config --global user.email "adresse@email"</dt>
-                <dd>- définir adresse mail de l'utilisateur,</dd>
-                <dt>git config --global color.ui auto</dt>
-                <dd>- paramétrage syntaxique en couleur</dd>
-                <dt></dt>
-                <dt></dt>
-                <dt>git config --list</dt>
-                <dd>- liste les options</dd>
-              </dl>
-          </p>
-        <hr/>
-		      <p class="entete">
-              Utiliser GIT en local<br/>
-		      </p>
-        <hr/>
-        <p>
-      	    <dl>
-                <dt>mkdir cheatsheet_git; cd cheatsheet_git</dt>
-                <dd>-création rep projet</dd>
-            		<dt>git init</dt>
-            		<dd>-pour initialiser un projet,</dd>
-            		<dt>git status</dt>
-            		<dd>donne l'état actuel,</dd>
-            		<dt>git add mon_site.html </dt>
-            		<dd> ajoute le fichier mon_site.html</dd>
-            		<dt>git commit -m "commentaire sur l'objet du commit"</dt>
+<body>
+  <h1 id="header">
+    Cheat sheet GIT / GITHUB
+  </h1>
+  <hr/>
+  <p class="entete">
+    configurer GIT
+    <br/>
+  </p>
+  <hr/>
+  <dl>
+    <dt>git config --global user.name "nom"</dt>
+    <dd>- définir le nom de l'utilisateur git,</dd>
+    <dt>git config --global user.email "adresse@email"</dt>
+    <dd>- définir adresse mail de l'utilisateur,</dd>
+    <dt>git config --global color.ui auto</dt>
+    <dd>- paramétrage syntaxique en couleur</dd>
+    <dt></dt>
+    <dt></dt>
+    <dt>git config --list</dt>
+    <dd>- liste les options</dd>
+  </dl>
+  <hr/>
+  <p class="entete">
+    Utiliser GIT en local
+    <br/>
+  </p>
+  <hr/>
+    <dl>
+      <dt>mkdir cheatsheet_git; cd cheatsheet_git</dt>
+      <dd>-création rep projet</dd>
+      <dt>git init</dt>
+      <dd>-pour initialiser un projet,</dd>
+      <dt>git status</dt>
+      <dd>donne l'état actuel,</dd>
+      <dt>git add mon_site.html </dt>
+      <dd> ajoute le fichier mon_site.html</dd>
+      <dt>git commit -m "commentaire sur l'objet du commit"</dt>
 
-            		<dt>git commit -a -m "comm" </dt>
-            		<dd>  add et commit</dd>
+      <dt>git commit -a -m "comm" </dt>
+      <dd> add et commit</dd>
 
-            		<dt>git log </dt>
-            		<dd>donne les détails des différents points de commit</dd>
-            		<dt>git log -n 2</dt><dd>affiche les 2 derniers logs</dd>
-            		<dt>git log --oneline</dt>
-            		<dd>affiche le log en condensé,</dd>
+      <dt>git log </dt>
+      <dd>donne les détails des différents points de commit</dd>
+      <dt>git log -n 2</dt>
+      <dd>affiche les 2 derniers logs</dd>
+      <dt>git log --oneline</dt>
+      <dd>affiche le log en condensé,</dd>
 
-            		<dt>git diff </dt>
-            		<dd> liste les différences entre les versions des fichiers du projet</dd>
-      	    </dl>
-          </p>
-          <hr/>
-	        	<p class="entete">
-                    Naviguer dans GIT<br/>
-          </p>
-          <hr/>
-          <p>
-              <dl>
-                <dt>git log [ --online ]</dt>
-                <dd>chercher le commit number</dd>
-                <dt>git checkout numlogARestaurer</dt>
-                <dd>permet de recuperer le code à un moment donné
-                consultation seule - pas de commit possible sur un projet</dd>
-                <dt>git checkout numlogARest index.html </dt>
-                <dd>restaure le fichier index.html à l'instant du commit
-                    possible de commiter le fichier</dd>
+      <dt>git diff </dt>
+      <dd> liste les différences entre les versions des fichiers du projet</dd>
+    </dl>
+  <hr/>
+  <p class="entete">
+    Naviguer dans GIT
+    <br/>
+  </p>
+  <hr/>
+    <dl>
+      <dt>git log [ --online ]</dt>
+      <dd>chercher le commit number</dd>
+      <dt>git checkout numlogARestaurer</dt>
+      <dd>permet de recuperer le code à un moment donné consultation seule - pas de commit possible sur un projet</dd>
+      <dt>git checkout numlogARest index.html </dt>
+      <dd>restaure le fichier index.html à l'instant du commit possible de commiter le fichier</dd>
 
-                <dt>git revert</dt>
-                <dt>git reset</dt>
-              </dl>
-        	</p>
-          <hr/>
-      		<p class="entete">
-             git en mode remote<br/>
-      		</p>
-          <hr/>
-          <p>
-             <dl>
-            		<dd>sur gitHub, créer un repository ex: cheatsheet_git</dd>
-            		<dt>git remote add origin git@github.com:didierClin/cheatSheet_git.git</dt>
-                <dd>- synchroniser le repertoire git local avec le repository gitHub:</dd>
+      <dt>git revert</dt>
+      <dd></dd>
+      <dt>git reset</dt>
+      <dd></dd>
+    </dl>
+  <hr/>
+  <p class="entete">
+    git en mode remote
+    <br/>
+  </p>
+  <hr/>
+    <dl>
+      <dt></dt>
+      <dd>sur gitHub, créer un repository ex: cheatsheet_git</dd>
+      <dt>git remote add origin git@github.com:didierClin/cheatSheet_git.git</dt>
+      <dd>- synchroniser le repertoire git local avec le repository gitHub:</dd>
 
-            		<dt>git push -u origin master</dt>
-                <dd>- pousser les fichiers locaux vers le serveur:</dd>
-            		<dt>git pull origin master </dt>
-            		<dd>- recuperer un projet ou une branche git</dd>
+      <dt>git push -u origin master</dt>
+      <dd>- pousser les fichiers locaux vers le serveur:</dd>
+      <dt>git pull origin master </dt>
+      <dd>- recuperer un projet ou une branche git</dd>
 
-            		<dt>git remote -v</dt>
-            		<dd>- verifier que le repository existe sur github</dd>
+      <dt>git remote -v</dt>
+      <dd>- verifier que le repository existe sur github</dd>
 
-              </dl>
-          </p>
-          <hr/>
-        	<p class="entete">
-             git : branches<br/>
-          </p>
-          <hr/>
-        	<p>
-            <dl>
-            		<h3>une branche = une fonctionnalité</h3>
-            		<dt>git branch new_feature</dt>
-            		<dd>Crée une nouvelle branche</dd>
+    </dl>
+  <hr/>
+  <p class="entete">
+    git : branches
+    <br/>
+  </p>
+  <hr/>
+  <h3>une branche = une fonctionnalité</h3>
+  <dl>
+    <dt>git branch new_feature</dt>
+    <dd>Crée une nouvelle branche</dd>
 
-            		<dt>git branch</dt> <dd>liste les différentes branches existantes</dd>
+    <dt>git branch</dt>
+    <dd>liste les différentes branches existantes</dd>
 
-            		<dt>git checkout new_feature</dt>  <dd>positionne l'environnement git sur la branche 'new_feature'</dd>
+    <dt>git checkout new_feature</dt>
+    <dd>positionne l'environnement git sur la branche 'new_feature'</dd>
 
-            		<dt>git diff master..new_feature</dt> <dd>liste les différences entre les deux branches</dd>
+    <dt>git diff master..new_feature</dt>
+    <dd>liste les différences entre les deux branches</dd>
 
-            		<dt>git merge new_feature</dt>
-            	  <dd>merge les changements entre les deux branches et réalise le commit</dd>
-                <dd> on doit etre positionné dans la branche receptrice du merge</dd>
-            		<dt>git branch -d new_feature</dt>   <dd>delete la branche new_feature (clean-up)</dd>
-            		<dt>git branch -D new_feature</dt>   <dd>force le delete lorsque la branche n'est pas</dd><dd> commitée avant le delete (pending change)</dd>
+    <dt>git merge new_feature</dt>
+    <dd>merge les changements entre les deux branches et réalise le commit</dd>
+    <dd> on doit etre positionné dans la branche receptrice du merge</dd>
+    <dt>git branch -d new_feature</dt>
+    <dd>delete la branche new_feature (clean-up)</dd>
+    <dt>git branch -D new_feature</dt>
+    <dd>force le delete lorsque la branche n'est pas</dd>
+    <dd> commitée avant le delete (pending change)</dd>
+  </dl>
+  <hr/>
+  <p class="entete">
+    git : Partager
+    <br/>
+  </p>
+  <hr/>
+  <dl>
+    <dt>git fetch</dt>
+    <dd></dd>
+    <dt>git clone</dt>
+    <dd></dd>
+  </dl>
 
-            </dl>
-        	</p>
-          <hr/>
-	          <p	class="entete">
-              git : Partager<br/>
-            </p>
-		      <hr/>
-	      	<p>
-              <dl>
-              <dt>git fetch</dt>
-              <dt>git clone</dt>
-          </dl>
-          </p>
-          <hr/>
-          <p	class="entete">
-                git : Héberger
-      		</p>
-          <hr/>
-      		<p>
-            <dl>
-            		<dt>git branch gh-pages </dt>     <dd>crée une branche (gh-pages : gitHub pages)</dd>
-            		<dt>git checkout gh-pages</dt>
-            		<dt>git push origin gh-pages</dt> <dd>dans settings on obtient une url externe  (voir jekill)</dd>
-            </dl>
-       	  </p>
-    </body>
+  <hr/>
+  <p class="entete">
+    git : Héberger
+  </p>
+  <hr/>
+  <dl>
+    <dt>git branch gh-pages </dt>
+    <dd>crée une branche (gh-pages : gitHub pages)</dd>
+    <dt>git checkout gh-pages</dt>
+    <dt>git push origin gh-pages</dt>
+    <dd>dans settings on obtient une url externe (voir jekill)</dd>
+  </dl>
+</body>
+
 </html>
