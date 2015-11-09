@@ -1,7 +1,5 @@
-* {
-	font-size: 1.1em;
-}
 body{
+	font-size: 1.1em;
 	background-color: #9692FF;
 	text-align: center;
 }
@@ -55,6 +53,8 @@ dd{
 @media screen and (min-width: 500px) and (max-width: 800px){
 	#header {
 		background-color: gray;
+		padding-top: 1em;
+		padding-bottom: 1em;
 	}
 	h1{
 			font-size: 1.4em;
@@ -73,12 +73,13 @@ dd{
 }
 /* Responsive adapt Small Size*/
 @media screen and (max-width: 499px) {
-    *{
+    body{
 			font-size: .97em;
 			}
-			#header {
-        background-color: red;
-    }
+		#header{
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
 		h1{
 			font-size: 1.2em;
 		}
